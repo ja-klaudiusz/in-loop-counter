@@ -19,8 +19,8 @@ export const useInLoopCounter = (cb) => {
   };
 
   useLayoutEffect(() => {
+    let timerId;
     if (!start) {
-      let timerId;
       const cbMethods = {
         setStart: handleStart,
         setStop: handleStop,
@@ -46,9 +46,8 @@ export const useInLoopCounter = (cb) => {
         return;
       }
       timerId = requestAnimationFrame(animate);
-
-      return () => !stop && cancelAnimationFrame(timerId);
     }
+    return () => !stop && cancelAnimationFrame(timerId);
   }, [start, stop]);
 
   return [start, handleStart, handleStop];
