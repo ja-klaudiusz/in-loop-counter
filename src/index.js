@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 
 export const useInLoopCounter = (cb) => {
   const counter = useRef(0);

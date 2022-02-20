@@ -1,6 +1,6 @@
 {
   "name": "in-loop-counter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook with in loop frame counter. For animation purposes. You can start, stop and pause loop while counting.",
   "author": "ja-klaudiusz",
   "license": "MIT",
