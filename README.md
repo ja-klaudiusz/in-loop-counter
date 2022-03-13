@@ -1,3 +1,6 @@
+> [!WARNING]
+> Package no longer supported. Instead use [useRequestAnimationFrame React Hook](https://www.npmjs.com/package/request-animation-frame-hook)
+
 # useInLoopCounter React Hook
 
 > React hook with in loop frame counter. For animation purposes. You can start, stop and pause loop while counting.
